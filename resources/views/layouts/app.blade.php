@@ -1,20 +1,16 @@
-<div class="max-w-3xl mx-auto">
+<div id="offcanvas-content" class="offcanvas-content">
 
-  <a class="sr-only focus:not-sr-only" href="#main">
-    {{ __('Skip to content') }}
-  </a>
+    <a class="sr-only focus:not-sr-only" href="#main">
+        {{ __('Skip to content') }}
+    </a>
 
-  @include('partials.header')
+    @include('partials.header')
 
-    <main id="main" class="py-8 prose main">
-      @yield('content')
-    </main>
+      
+        <main id="main">
+            @yield('content')
+        </main>
+    
+    @include('partials.footer')
 
-    @hasSection('sidebar')
-      <aside class="sidebar">
-        @yield('sidebar')
-      </aside>
-    @endif
-
-  @include('partials.footer')
 </div>
