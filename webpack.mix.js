@@ -12,24 +12,30 @@ require('@tinypixelco/laravel-mix-wp-blocks');
  |
  */
 
-mix
-  .setPublicPath('./public')
-  .browserSync('sage.test');
 
 mix
-  .sass('resources/styles/app.scss', 'styles')
-  .sass('resources/styles/editor.scss', 'styles')
-  .options({
+    .setPublicPath(`./public`)
+    .browserSync({
+        host: 'localhost',
+        notify: false,
+        port: 8888,
+        ui: false,
+        open: false,
+  })
+
+
+mix.sass(`resources/styles/app.scss`, `styles`).options({
     processCssUrls: false,
-    postCss: [require('tailwindcss')],
-  });
+    postCss: [require(`tailwindcss`)(`resources/styles/tailwind.config.js`)],
+})
+
 
 mix
-  .js('resources/scripts/app.js', 'scripts')
-  .js('resources/scripts/customizer.js', 'scripts')
-  .blocks('resources/scripts/editor.js', 'scripts')
-  .autoload({ jquery: ['$', 'window.jQuery'] })
-  .extract();
+    .js('resources/scripts/app.js', 'scripts')
+    .js('resources/scripts/customizer.js', 'scripts')
+    //.autoload({ jquery: ['$', 'window.jQuery'] })
+    .extract();
+
 
 mix
   .copyDirectory('resources/images', 'public/images')
