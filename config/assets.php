@@ -37,6 +37,11 @@ return [
             'path' => get_theme_file_path('public'),
             'url' => get_theme_file_uri('public'),
             'assets' => public_path('mix-manifest.json'),
+        ],
+        'resource' => [
+            'path' => get_theme_file_path('resources'),
+            'url' => get_theme_file_uri('resources'),
+            'assets' => '',
         ]
     ]
 ];

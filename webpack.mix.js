@@ -13,15 +13,22 @@ require('@tinypixelco/laravel-mix-wp-blocks');
  */
 
 
-mix
-    .setPublicPath(`./public`)
-    .browserSync({
-        host: 'localhost',
-        notify: false,
-        port: 8888,
-        ui: false,
-        open: false,
+// mix
+//     .setPublicPath(`./public`)
+//     .browserSync({
+//         host: 'localhost',
+//         notify: false,
+//         port: 8888,
+//         ui: false,
+//         open: false,
+//   })
+
+  mix.setPublicPath(`./public`).browserSync({
+    notify: false,
+    ui: false,
+    open: false,
   })
+   
 
 
 mix.sass(`resources/styles/app.scss`, `styles`).options({
@@ -37,10 +44,11 @@ mix
     .extract();
 
 
-mix
-  .copyDirectory('resources/images', 'public/images')
-  .copyDirectory('resources/fonts', 'public/fonts');
+// mix
+//   .copyDirectory('resources/images', 'public/images')
+//   .copyDirectory('resources/fonts', 'public/fonts');
 
 mix
   .sourceMaps()
   .version();
+
