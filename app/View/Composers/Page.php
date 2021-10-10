@@ -33,10 +33,11 @@ class Page extends Composer
             //  print_r($flexibleContent);  
 
             for ($index = 0; $index <= $flexibleContentLength - 1; $index++) {
-
                 $row = $flexibleContent[$index];
-
                 array_push($data);        
+                
+                            // var_dump($row);
+                            // die();
             }
 
 
