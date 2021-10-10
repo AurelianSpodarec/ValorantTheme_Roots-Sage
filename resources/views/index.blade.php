@@ -8,5 +8,6 @@
 {{-- heading --}}
 {{-- text --}}
 
-<x-button message="Hello" variant="primary" />
+{{-- <x-button message="Hello" variant="primary" />
 <x-typography variant="h1">Yesss</x-typography>
+<x-sec --}}
