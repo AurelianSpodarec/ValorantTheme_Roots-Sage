@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'sage-boilerplate' );
+define( 'DB_NAME', 'vintage-roots' );
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '/l]-zh8,Q$vfIz}iuc/K<Ao:;OgJ)=e~S`C:sx4nAf@JY]re+lk&Li-y~.~rFei$' );
-define( 'SECURE_AUTH_KEY',  'OYHMyIK7)&c%5z-ME2Y!`WtQ)s6R[{Ym?PG~_Ysx6*.[>uIc^s,9TS&[6*=OI}^:' );
-define( 'LOGGED_IN_KEY',    'SZ![V|]|K$DI,4MKBl(Cr?n}`;BdIS{D`=:AMV38pj2)dA bfD}W_h{I >9>/s,!' );
-define( 'NONCE_KEY',        ',Z(O_*EpT+uO3uftDy_N)jqmS~)Z:YUrz F^NYg6_{ED@Kxau;;#Me-ev-!@4_Vn' );
-define( 'AUTH_SALT',        '%~Ua@{lhNG9GS:f0 Q!^8D=;</-r|Y%h{:fY+ablTs>@9i;&xr4(E+ku@_VtekNz' );
-define( 'SECURE_AUTH_SALT', 'Z&Gpg#qP]CvV8 HMrpln@2CK H^gvi,J9]Qs15R8A~.dYhoSH@YVJ8KD09v7Bak1' );
-define( 'LOGGED_IN_SALT',   ')j5#&2~H2w>mP|-t/p,{0.LUxz40 hm#{vi|*)_nZiod%TW~.VHVf<vgrn.A:T)Y' );
-define( 'NONCE_SALT',       '#|8=:)cGJ/`(8Q_~r/|olp@FTzl8>D;R/t(,jH0KMl8`?N!MO*wF_XdWXX/rhYKP' );
+define( 'AUTH_KEY',         'e5P760(IpVWwo;z4Nww0f@P%ewl><y?au1 8X&.fg-vYrvzKaf*N`]_muL4vd4[o' );
+define( 'SECURE_AUTH_KEY',  'D[(@I ;K@!7YtuLJ:8E=%kNweRA^j!vfhIi<5JV-aTCU$7!q]VF_08As.G^f~)+B' );
+define( 'LOGGED_IN_KEY',    '}Y{%qwP~b3LfAk@6RxLYb!R-,t^{Ky0fKNT3~kZyzbXwcY`C($DU9a!k!$}35<R/' );
+define( 'NONCE_KEY',        'AQZF{&!S#}<OP:3wwWs4|H-yzy*=1$I6oJ`xuwOh:bdJ PK`|!n1_S@kU+qY^rZU' );
+define( 'AUTH_SALT',        '[m{Q{bOwD&3(x8**l2OJ!7!8W5o<q5+jWem0$`DlI2k9lI4^YO]^8XTMbw;Mo4VI' );
+define( 'SECURE_AUTH_SALT', 'eJrqt|Q@`%_sbpX1lv?zv,w+m!~3uZ&]*,.$<5H*g%#$?z5L2||/fI*,58@<XTLV' );
+define( 'LOGGED_IN_SALT',   ';y868L*eHf[|qBZY-o%`>zuf_={WX<`2/<aJ5f%,s2*A@`W9bgm4b}X{dS|+75{C' );
+define( 'NONCE_SALT',       'GR+G]^,{04O<5lU}RvTS2uxeCC!DwIT3.^PY1?pb.s.hac~)q)}-`_fH=}SB!i%*' );
 
 /**#@-*/
 
@@ -79,7 +79,8 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+// define( 'WP_DEBUG', false );
+define('WP_ENV', 'development');
 
 /* Add any custom values between this line and the "stop editing" line. */
 

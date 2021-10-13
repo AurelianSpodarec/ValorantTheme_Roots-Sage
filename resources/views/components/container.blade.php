@@ -1,3 +1,4 @@
-<div {{$style ? 'style="{{ $style }}"' : ""}} {{ $attributes->merge(['class' =>  $container . " " . $class ]) }}>
+<div {{$attributes->merge(['style' =>  $style ])}} {{ $attributes->merge(['class' =>  $container . " " . $class ]) }}>
     {!! $message ?? $slot !!}
 </div>
+

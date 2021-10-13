@@ -17,6 +17,8 @@ class Button extends Component
     public $buttonKind;
     public $buttonRadius;
     public $buttonSize;
+    
+    public $disabled;
 
     public $message;
 
@@ -53,7 +55,6 @@ class Button extends Component
         'lg'     => 'button-large',
     ];
 
-    public $disabled;
 
 
     public function __construct(

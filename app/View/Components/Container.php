@@ -7,30 +7,29 @@ use Roots\Acorn\View\Component;
 class Container extends Component
 {
 
-
     public $style;
     public $class;
     public $message;
 
 
-    public $maxWidth = [
-        'xs'         => '',
-        'sm'         => '',
-        'md'         => '',
-        'lg'         => '',
-        'xl'         => '',
-        'false'         => ''
+    public $container = [
+        'xs'         => 'a',
+        'sm'         => 'b',
+        'md'         => 'c',
+        'lg'         => 'd',
+        'xl'         => 'e',
+        'false'         => 'f'
     ];
 
 
     public function __construct(
-        $maxWidth = null,
         $style = null,
         $class = null,
+        $container = 'md',
         $message = null
     )
     {
-        $this->maxWidth = $this->$maxWidth[$maxWidth] ?? $this->$maxWidth['md'];
+        $this->container = $this->container[$container] ?? $this->container['md'];
 
         $this->style = $style;
         $this->class = $class;

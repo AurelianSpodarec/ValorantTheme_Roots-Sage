@@ -36,8 +36,8 @@ class Page extends Composer
                 $row = $flexibleContent[$index];
                 array_push($data);        
                 
-                            // var_dump($row);
-                            // die();
+                // var_dump($row);
+                // die();
             }
 
 
