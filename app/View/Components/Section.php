@@ -29,13 +29,13 @@ class Section extends Component
 
 
     public function __construct(
-        $variant = null,
+        $variant = 'primary',
         $style = null,
         $class = null,
         $message = null
     )
     {
-        $this->variant = $this->$variant[$variant] ?? $this->$variant['md'];
+        $this->variant = $this->variant[$variant] ?? $this->variant['md'];
 
         $this->style = $style;
         $this->class = $class;
