@@ -8,37 +8,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {},
-    },
-  },
-  variants: {
-    extend: {
-        backgroundColors: {
-            primary: {
-                'default': '#00ced8',
-                '300': '#05a7af',
-                '500': '#027f86',
-                '700': '#025e63'
-            },
-            secondary: {
-                'default': '#ffaa1b',
-                '300': '#ffdda4',
-                '500': '#ffcc76',
-                '700': '#ffbb49'
-            },
-            teritary: {
-                'default': '#015249',
-                '300': '#fdcb56',
-                '500': 'blue',
-                '700': '#ee811d'
-            },
-        },
         colors: {
             primary: {
-            'default': '#00ced8',
-            '300': '#05a7af',
-            '500': '#027f86',
-            '700': '#025e63'
+                'default': '#0061AC',
+                '300': '#05a7af',
+                '500': '#008BDD',
+                '700': '#00AADD'
             },
             secondary: {
                 'default': '#ffaa1b',
@@ -53,7 +28,19 @@ module.exports = {
                 '700': '#ee811d'
             },
             accent: {
-                'default': '#015249'
+                'default': '#9B2943',
+                '100'    : '#EF3E42'
+            },
+            neutral: {
+                '100'   : '#FFFFFF',
+                '200'   : '#FAFAFA',
+                '300'   : '#F0F0F0',
+                '400'   : '',
+                '500'   : '#C2C2C2',
+                '600'   : '#6B6B6B',
+                '700'   : '',
+                '800'   : '##222222',
+                '900'   : '#000',
             },
             complimentary: 'red',
             'success': {
@@ -80,7 +67,7 @@ module.exports = {
                 '500': '#6adaff',
                 '700': '#38cdff',
             }
-        }
+        },
     },
   },
   plugins: [require('@tailwindcss/typography')],

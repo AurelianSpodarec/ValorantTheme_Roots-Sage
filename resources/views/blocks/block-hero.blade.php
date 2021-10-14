@@ -6,10 +6,17 @@
 
 
 <x-section variant="primary">
-Section
+<x-container>
+
+
+    <div>
+        <x-typography type="h1">Title</x-typography>
+        <x-typography title="Title" type="h1" />
+    </div>
+
+
+    <x-button message="Contact Me" variant="primary" />
+
+</x-container>
 </x-section>
 
-
-<x-typography type="h2">
-Hellosdfsd
-</x-typography>

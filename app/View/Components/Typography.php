@@ -9,8 +9,6 @@ class Typography extends Component
 
 
     // TODO: Add error handling
-    // TODO: Add Icon Support
-    // TODO: Ass 'href'
 
 
     public $style;
@@ -39,9 +37,6 @@ class Typography extends Component
         'body1'      => '',
         'body2'      => ''
     ];
-
- 
-    public $disabled;
 
 
     public function __construct(
